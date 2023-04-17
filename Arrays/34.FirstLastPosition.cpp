@@ -73,4 +73,9 @@ int main()
     int target = 8;
 
     vector<int> num = searchRange(nums, target);
+
+    for (int i = 0; i < num.size(); i++)
+    {
+        cout << num[i] << " ";
+    }
 }
