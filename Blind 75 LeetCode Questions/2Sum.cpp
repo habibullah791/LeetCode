@@ -25,7 +25,6 @@ vector<int> twoSum(vector<int> &nums, int target)
     }
     return end;
 }
-
 int main()
 {
     vector<int> nums = {2, 7, 11, 15};
@@ -36,5 +35,4 @@ int main()
         cout << end[i] << " ";
     }
     cout << endl;
-    return 0;
 }
