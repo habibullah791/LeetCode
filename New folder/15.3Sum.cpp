@@ -28,12 +28,10 @@ vector<vector<int>> threeSum(vector<int> &nums)
             if (nums[l] + nums[r] == target)
             {
                 ans.push_back({nums[i], nums[l], nums[r]});
-                if (l < r && nums[i] == nums[i + 1])
-                {
+                while (l < r && nums[l] == nums[l + 1])
                     l++;
+                while (l < r && nums[r] == nums[r - 1])
                     r--;
-                }
-
                 l++;
                 r--;
             }
@@ -47,15 +45,13 @@ vector<vector<int>> threeSum(vector<int> &nums)
             }
         }
 
-        if (l < r && nums[i] == nums[i + 1])
-        {
+        while (i + 1 < n && nums[i] == nums[i + 1])
             i++;
-        }
     }
     return ans;
 }
-
-int main(){
+int main()
+{
     vector<int> nums = {-1, 0, 1, 2, -1, -4};
     vector<vector<int>> ans = threeSum(nums);
     for (int i = 0; i < ans.size(); i++)
