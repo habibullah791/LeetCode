@@ -21,7 +21,7 @@ int hammingWeight(uint32_t n)
 
 int main()
 {
-    uint32_t n = 00000000000000000000000000001011;
+    uint32_t n = 00000000000000000000000101011011;
     cout << hammingWeight(n) << endl;
     return 0;
 }
