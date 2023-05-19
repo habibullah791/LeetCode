@@ -23,5 +23,7 @@ bool isPalindrome(int x)
 }
 int main()
 {
-    isPalindrome(789);
+    bool isPalandrome  = isPalindrome(789);
+    cout << isPalandrome << endl;
+    return 0;
 }
