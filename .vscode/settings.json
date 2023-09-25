@@ -1,7 +1,11 @@
 {
     "files.associations": {
+        "*.embeddedhtml": "html",
+        ".env*": "dotenv",
         "*.cpp": "cpp",
         "ostream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ios": "cpp",
+        "xiosbase": "cpp"
     }
 }
